@@ -1,0 +1,25 @@
+Create Sequence seq_ngo
+Increment by 1
+Start with 1
+Nocycle
+Nocache;
+
+
+Create table Step_Register
+(
+	ngo_Id number(5) Constraint User_Cendential_Id_PK Primary Key,
+	organization_name varchar2(30) not null,
+	organization_head varchar2(30) not null, 
+	designation varchar2(30) not null, 
+	email varchar2(30) not null,
+	mobile_number number(10) not null,
+	address varchar2(30) not null, 
+	account_holder varchar2(30) not null, 
+	account_no varchar2(30) not null, 
+	bank_name varchar2(30) not null, 
+	branch_name varchar2(30) not null, 
+	branch_city varchar2(30) not null, 
+	IFSC_code varchar2(30) not null, 
+	project_name varchar2(30) not null, 
+	project_incharge_Name varchar2(30) not null
+);
